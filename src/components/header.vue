@@ -3,11 +3,29 @@
     <div class="firstSection">
       <div class="container">
         <div class="d-flex bg-black ">
-          <div class="p-2 bg-info text-white font-weight-bold"><small>VIP SWEEPSTAKES</small></div>
-          <div class="p-2 "><small class="text-warning">$5000 SHOPPING SHREE</small></div>
-          <div class="p-2 font-weight-light text-grey">join movie VIP for chance to win don't forget join during checkout</div>
-          <div class="ml-auto font-weight-light text-white p-2">
-            <li><a href="#"><span class="glyphicon glyphicon-log-in "></span> Login</a></li>
+          <div class="particon bg-info p-1">
+  
+            <div class="d-flex ">
+              <div class="mr-1">
+                <font-awesome-icon :icon="['fab','apple']" class="fa-1x icon " />
+              </div>
+              <div class="mb-1 text-white font-weight-bold">VIP SWEEPSTAKES</div>
+            </div>
+          </div>
+  
+          <div class="p-1 text-warning"><small>$5000 SHOPPING SHREE</small></div>
+          <div class="p-1 font-weight-light text-muted">join movie VIP for chance to win don't forget join during checkout</div>
+          <div class="ml-auto font-weight-light text-white p-1">
+            <!-- <div class="circle-icon mr-2">
+                                    <font-awesome-icon :icon="['fas','facebook-f']" class="fa-1x icon" />
+                                </div>
+            <li><a href="#"><span class="text-muted "></span> Login</a></li> -->
+            <div class="d-flex ">
+              <div class="mr-1 text-muted">
+                <font-awesome-icon :icon="['fas','sign-in-alt']" class="fa-1x" />
+              </div>
+              <div class="mb-1 text-white text-muted">Login</div>
+            </div>
           </div>
         </div>
       </div>
@@ -17,8 +35,8 @@
         <b-navbar toggleable="lg" type="white" variant="white">
           <b-navbar-brand href="#">NavBar</b-navbar-brand>
           <b-nav-form>
-            <b-form-input size="sm" class="form-control border-secondary rounded-pill mr-2" placeholder="Search"></b-form-input>
-            <button class="button btn-warning text-white">GO</button>
+            <b-form-input size="sm" class="form-control border-secondary  rounded-pill mr-2" placeholder="Search"></b-form-input>
+            <button class="button btn-warning text-white border-0">GO</button>
           </b-nav-form>
           <b-navbar-nav class="ml-auto">
             <li class="nav-item">
@@ -53,8 +71,8 @@
 
 <style>
   /* .header{
-          padding: -0.5px;
-        } */
+              padding: -0.5px;
+            } */
   
   .firstSection {
     background-color: black;
@@ -64,5 +82,9 @@
   
   .button {
     border-radius: 50%;
+  }
+  
+  .icon {
+    color: floralwhite;
   }
 </style>
