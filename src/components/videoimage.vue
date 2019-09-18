@@ -5,8 +5,8 @@
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-3"></div>
-                        <div class="col-md-9 px-4">
-                            <div class="text-warning text-left  mb-3">
+                        <div class="col-md-9 ">
+                            <div class="text-left  mb-3 orange">
                                 <h3>Video and photos</h3>
                             </div>
                             <div class="embed-responsive embed-responsive-4by3">
@@ -14,113 +14,94 @@
                             </div>
                             <div class="text-left">
                                 <h5> 10 cloverfield lane</h5>
-                                <p> A young women wakes up after a terriable accident to find that she's locked in a celler with a coomsday prepper...Who insists that he saved her life and that the world outside is unhiabitable following an apocalyptic catastrophe.
-                                    Uncertain what to believe the women soon.. </p>
+                                <div class="paratext"> A young women wakes up after a terriable accident to find that she's locked in a celler with a coomsday prepper...Who insists that he saved her life and that the world outside is unhiabitable following an apocalyptic catastrophe.
+                                    Uncertain what to believe the women soon.. </div>
                             </div>
                         </div>
                     </div>
     
                 </div>
-                <div class="col-md-6 ">
+    
+                <div class="col-md-6">
                     <div class="row">
-                        <div class="col-md-4  mb-1">
-                            <div class="imgsize">
-                                <img src="../assets/pic1.jpg"></div>
-    
+                        <div class="col-md-4 px-1 mb-2" v-for="widget in widgets" v-bind:key="widget.index">
+                            <div>
+                                <img :src="widget.img" img-alt="Image" img-top tag="article" class="imgsize"> </div>
                         </div>
-                        <div class="col-md-4 mb-1">
-                            <div class="imgsize">
-                                <img src="../assets/pic2.jpg"></div>
-    
-                        </div>
-                        <div class="col-md-4  mb-1">
-                            <div class="imgsize">
-                                <img src="../assets/pic3.jpg"></div>
-    
-                        </div>
-                        <div class="col-md-4 mb-1">
-                            <div class="imgsize">
-                                <img src="../assets/pic4.jpg"></div>
-    
-                        </div>
-                        <div class="col-md-4 mb-1">
-                            <div class="imgsize">
-                                <img src="../assets/pic5.jpg"></div>
-    
-                        </div>
-                        <div class="col-md-4  mb-1">
-                            <div class="imgsize">
-                                <img src="../assets/pic6.jpg"></div>
-    
-                        </div>
-                        <div class="col-md-4 mb-1">
-                            <div class="imgsize">
-                                <img src="../assets/pic7.jpg"></div>
-    
-                        </div>
-                        <div class="col-md-4  mb-1">
-                            <div class="imgsize">
-                                <img src="../assets/pic5.jpg"></div>
-    
-                        </div>
-                        <div class="col-md-4  mb-1">
-                            <div class="imgsize">
-                                <img src="../assets/pic4.jpg"></div>
-    
-                        </div>
-                        
-    
                     </div>
                 </div>
-                <!-- <clazy-load src="https://unsplash.it/500">
-  <img src="https://unsplash.it/500">
-  <div class="preloader" slot="placeholder">
-    Loading message
-  </div>
-</clazy-load>
- <clazy-load src="https://unsplash.it/500">
-  <img src="https://unsplash.it/500">
-  <div class="preloader" slot="placeholder">
-    Loading message
-  </div>
-</clazy-load> -->
-<!-- <clazy-load src="imgsrc">
-  <figure class="image-wrapper">
-    <img src="../assets/pic4.jpg">
-  </figure>
-  <div class="preloader-wrapper" slot="placeholder">
-    <preloader-component></preloader-component>
-  </div>
-</clazy-load> -->
-                
             </div>
         </div>
     </div>
-    
 </template>
 
 <script>
-export default {};
+    import image1 from "../assets/images/pic1.jpg";
+    
+    import image2 from "../assets/images/pic2.jpg";
+    
+    import image3 from "../assets/images/pic3.jpg";
+    
+    import image4 from "../assets/images/pic4.jpg";
+    
+    import image5 from "../assets/images/pic5.jpg";
+    
+    import image6 from "../assets/images/pic6.jpg";
+    
+    import image7 from "../assets/images/pic7.jpg";
+    
+    export default {
+        data() {
+            return {
+                widgets: [{
+                        img: image1,
+                    }, {
+                        img: image2,
+                    },
+                    {
+                        img: image3,
+                    },
+                    {
+                        img: image4,
+                    },
+                    {
+                        img: image5,
+                    },
+                    {
+                        img: image6,
+                    },
+                    {
+                        img: image7,
+                    },
+                    {
+                        img: image3,
+                    },
+                    {
+                        img: image2,
+                    }
+    
+                ]
+    
+            };
+        }
+    };
 </script>
 
-<style>
-.imgsize {
-  width: 150px;
-  height: 140px;
-  overflow: hidden;
-}
-
-/* .iframe {
-                            height: 200px;
-                            width: 300px;
-                        } */
-
-p {
-  font-size: 9px;
-}
-
-.img {
-  max-width: 100%;
-  max-height: 100%;
-}
+<style lang="scss">
+    @import"src/assets/scss/main.scss";
+    @import"src/assets/scss/variable.scss";
+    .silderimage {
+        .imgsize {
+            width: 100%;
+            height: 140px;
+            overflow: hidden;
+        }
+        .paratext {
+            font-size: 9px;
+        }
+        .img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
 </style>

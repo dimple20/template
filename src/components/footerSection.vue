@@ -1,15 +1,18 @@
 <template>
     <div class="footerpart">
-        <div class="footertop">
+        <div class="footertop  ">
             <div class="container">
-                <div class="row ">
-                    <div class="col-md-3 mt-5 text-left">
-                        <div class="logo text-white mb-2">LOGO</div>
+                <div class="row">
+    
+                    <div class="col-md-3 mt-5 text-left ">
+                        <div class="logo text-white mb-2">
+                            <img src="../assets/images/footerlogo.jpg" class="footerimg">
+                        </div>
                         <div class="message text-white mb-3">
                             Lorem ipsum dolar sit amet consectetor adipiscing elit,sed do eiusmod tempore.incididunt ut labore et dolare mango aliqw.Ut enim ad minim veniam,quis nostrud exercitiation uliamco laboris nisi ut aliquip ex ea commomdo consequat
                         </div>
                         <div class="d-flex">
-                            <div>
+                            <div class="mb-5">
                                 <div class="circle-icon mr-2">
                                     <font-awesome-icon :icon="['fab', 'facebook-f']" class="fa-1x " />
                                 </div>
@@ -26,15 +29,10 @@
                             </div>
                             <div>
                                 <div class="circle-icon mr-2">
-                                    <font-awesome-icon :icon="['fab', 'facebook-f']" class="fa-1x " />
+                                    <font-awesome-icon :icon="['fab', 'pinterest']" class="fa-1x " />
                                 </div>
                             </div>
                         </div>
-    
-    
-    
-    
-    
                     </div>
                     <div class="col-md-3 mt-5 ">
                         <div class="font-weight-bolder mb-2 text-left text-white">Custom Services</div>
@@ -76,12 +74,12 @@
                                 <div class="mb-1 text-warning">01-234-5678</div>
                             </div>
     
-                            <b-input-group class="">
+                            <b-input-group class="mb-3">
                                 <template v-slot:append>
-                                     <b-input-group-text> <div class="mr-1" >
-                                            <font-awesome-icon :icon="['far','envelope']" class="fa-1x icon" />
-                                        </div></b-input-group-text>
-                                </template>
+                                             <b-input-group-text> <div class="mr-1" >
+                                                    <font-awesome-icon :icon="['far','envelope']" class="fa-1x icon" />
+                                                </div></b-input-group-text>
+</template>
                      <b-form-input></b-form-input>
                   </b-input-group>
 
@@ -89,6 +87,7 @@
                     </div>
                 </div>
     
+
             </div>
         </div>
         <div class="footerbottom">
@@ -114,14 +113,20 @@
     export default {};
 </script>
 
-<style>
-    .footertop {
-        background-image: url("../assets/footer (1).png");
+<style lang="scss">
+    @import "src/assets/scss/variable.scss";
+    @import "src/assets/scss/main.scss";
+    .footerpart{
+        .footertop {
+        background-image: url("../assets/images/footer (1).png");
         width: 100%;
-        height: 50vh;
+        //   height: 50vh;
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    }
+    
     
     .mb-2 {
         font-size: 18px;
@@ -132,7 +137,7 @@
     }
     
     .footerbottom {
-        background-color: black;
+        background-color: $black;
     }
     
     .message {
@@ -144,11 +149,17 @@
         border-radius: 50%;
         padding: 5px 11px;
         /* margin-right: 20px; */
-        background-color: #80808030;
-        color: floralwhite;
+        background-color: $background-text;
+        color: $white;
     }
     
     .text-box {
-        color: grey;
+        color: $background-text;
+    }
+    
+    .footerimg {
+        height: 30px;
+        width: 80%;
     }
 </style>
+

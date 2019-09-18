@@ -12,15 +12,26 @@ var VueClazyLoad = require('vue-clazy-load')
 
 import VueLazyLoad from 'vue-lazyload';
 Vue.use(VueLazyLoad);
-import "vue-image-lightbox/dist/vue-image-lightbox.min.css"
 
 // slider
 import { VueFlux, Transitions } from 'vue-flux';
 Vue.use(VueFlux, Transitions);
+
+// using for 3d carsou
 import Carousel3d from 'vue-carousel-3d';
 Vue.use(Carousel3d);
 
+// swaiper
+import VueAwesomeSwiper from 'vue-awesome-swiper'
 
+// require styles
+import 'swiper/dist/css/swiper.css'
+
+Vue.use(VueAwesomeSwiper, /* { default global options } */)
+
+//lazyload
+import VueLazyload from 'vue-lazyload'
+Vue.use(VueLazyload)
 
 import {
   library
@@ -39,6 +50,7 @@ import {
   faFilm,
   faCreditCard,
   faSignInAlt,
+  faUser,
   
 } from '@fortawesome/free-solid-svg-icons'; // fas
 import {
@@ -67,7 +79,7 @@ import {
 
 
 
-library.add(faLocationArrow, faPhoneAlt, faStar, faMapMarkerAlt, faPaintBrush, faComments,faPlayCircle,faInfoCircle,faGift,faTicketAlt,faFilm,faCreditCard,faSignInAlt); // fas
+library.add(faLocationArrow, faPhoneAlt, faStar, faMapMarkerAlt, faPaintBrush, faComments,faPlayCircle,faInfoCircle,faGift,faTicketAlt,faFilm,faCreditCard,faSignInAlt,faUser); // fas
 library.add(faEnvelope, faClock, faUserCircle, faCheckCircle); // far
 library.add(faTwitter, faFacebookF, faGooglePlusG, faPinterest,faApple); // fab
 
