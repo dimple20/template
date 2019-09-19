@@ -1,6 +1,7 @@
 <template>
     <div class="vidimg mt-5">
         <div class="container">
+            <div id="demopart">
             <div class="row">
                 <div class="col-md-5">
                     <div class="text-left  mb-3 orange">
@@ -25,7 +26,7 @@
                     </div>
                         </div>
                     </div>
-    
+    </div>
                 </div>
             </div>
     

@@ -9,7 +9,7 @@
   
     <demopart/>
     <latestnew/>
-    <!-- <vueswp/> -->
+    <vueswp/>
     <!-- <simplesilder/> -->
     <!-- <lightsildes/> -->
   <navcontent/>

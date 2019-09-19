@@ -1,5 +1,6 @@
 <template>
     <div class="backimage ">
+        <div id="latestnew">
         <div class="imgbg mb-4 relative">
             <figure>
                 <img src="../assets/images/bannerbg2.jpeg" fluid alt="Responsive image">
@@ -106,6 +107,7 @@
                 </div>
             </div>
     
+        </div>
         </div>
     </div>
 </template>

@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <div id="cardimage">
     <div class="cradtemp">
       <ul class="breadcrumb bg-white mt-2">
         <li class="breadcrumb-item font-weight-bolder"><a href="" class=" text-warning">Now playing</a></li>
@@ -63,7 +64,7 @@
         
       </div>
     </div>
-  
+  </div>
     </div>
   
   
@@ -71,111 +72,113 @@
 </template>
 
 <script>
-  import image1 from "../assets/images/download 1.jpeg";
-  
-  import image2 from "../assets/images/download 3.jpeg";
+import image1 from "../assets/images/download 1.jpeg";
 
-  import image3 from "../assets/images/download2.jpeg";
+import image2 from "../assets/images/download 3.jpeg";
 
-  import image4 from "../assets/images/download 1.jpeg";
+import image3 from "../assets/images/download2.jpeg";
 
-  import image5 from "../assets/images/download2.jpeg";
+import image4 from "../assets/images/download 1.jpeg";
 
-  
-  export default {
-    data() {
-      return {
-        items: [{
-            img: image1,
-            title:"Star Trek Beyond",
-            subtitle: "Release:August 3,2017",
-            icon: ["fas", "play-circle"],
-            name: "Trailer",
-            subicon: ["fas", "info-circle"],
-            subname: "Details"
-          },
-          {
-            img: image2,
-            title: "Bad Moms",
-            subtitle: "Release: july 15,2017",
-            icon: ["fas", "play-circle"],
-            name: "Trailer",
-            subicon: ["fas", "info-circle"],
-            subname: "Details"
-          },
-          {
-            img: image3,
-            title: "The Girls with All",
-            subtitle: "Release: May 18,2017",
-            icon: ["fas", "play-circle"],
-            name: "Trailer",
-            subicon: ["fas", "info-circle"],
-            subname: "Details"
-          },
-          {
-            img: image4,
-            title: "Sausage Party",
-            subtitle:"Release: MAy 6,2017",
-            icon: ["fas", "play-circle"],
-            name: "Trailer",
-            subicon: ["fas", "info-circle"],
-            subname: "Details"
-          },
-          // {
-          //   img: image5,
-          //   title: "Don't Breathe",
-          //   subtitle:"Release: july 20,2017",
-          //   icon: ["fas", "play-circle"],
-          //   name: "Trailer",
-          //   subicon: ["fas", "info-circle"],
-          //   subname: "Details"
-          // }
-  
-          
-        ]
-      };
-    }
-  };
+import image5 from "../assets/images/download2.jpeg";
+
+export default {
+  data() {
+    return {
+      items: [
+        {
+          img: image1,
+          title: "Star Trek Beyond",
+          subtitle: "Release:August 3,2017",
+          icon: ["fas", "play-circle"],
+          name: "Trailer",
+          subicon: ["fas", "info-circle"],
+          subname: "Details"
+        },
+        {
+          img: image2,
+          title: "Bad Moms",
+          subtitle: "Release: july 15,2017",
+          icon: ["fas", "play-circle"],
+          name: "Trailer",
+          subicon: ["fas", "info-circle"],
+          subname: "Details"
+        },
+        {
+          img: image3,
+          title: "The Girls with All",
+          subtitle: "Release: May 18,2017",
+          icon: ["fas", "play-circle"],
+          name: "Trailer",
+          subicon: ["fas", "info-circle"],
+          subname: "Details"
+        },
+        {
+          img: image4,
+          title: "Sausage Party",
+          subtitle: "Release: MAy 6,2017",
+          icon: ["fas", "play-circle"],
+          name: "Trailer",
+          subicon: ["fas", "info-circle"],
+          subname: "Details"
+        }
+        // {
+        //   img: image5,
+        //   title: "Don't Breathe",
+        //   subtitle:"Release: july 20,2017",
+        //   icon: ["fas", "play-circle"],
+        //   name: "Trailer",
+        //   subicon: ["fas", "info-circle"],
+        //   subname: "Details"
+        // }
+      ]
+    };
+  }
+};
 </script>
 
 <style lang="scss">
-
 @import "src/assets/scss/variable.scss";
 
+.cradtemp {
+  font-size: 25px;
+}
+
+.font-size {
+  font-size: 1px;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  width: 25px;
+  height: 25px;
+  /* border: 3px solid orange; */
+  background-color: $search-btn-color;
+  color: $white;
+}
+
+.card-point {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 25%;
+  height: 12%;
+  border-radius: 50%;
+  padding: 10px;
+  color: $black;
+  background-color: $white;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+}
+@media (min-width: 375px) and (max-width: 812px) {
   .cradtemp {
-    font-size: 25px;
+    font-size: 11px;
   }
-  
-  .font-size {
-    font-size: 1px;
-  }
-  
-  .relative {
-    position: relative;
-  }
-  
-  .absolute {
-    position: absolute;
-    top: 25px;
-    right: 0px;
-    width: 25px;
-    height: 25px;
-    /* border: 3px solid orange; */
-    background-color:$search-btn-color;
-    color:$white;
-  }
-  
-  .card-point {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    width: 25%;
-    height: 12%;
-    border-radius: 50%;
-    padding: 10px;
-    color:$black;
-    background-color: $white;
-    transform: translate(-50%, -50%);
-    opacity: 0.5;
-  }
+}
 </style>

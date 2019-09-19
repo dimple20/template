@@ -2,6 +2,7 @@
 <template>
   <div class="silderhead ">
     <div class="container">
+      <div id="silder">
       <div class="first-point">
         <div class="row">
           <div class="col-md-9">
@@ -75,6 +76,7 @@
 </template>-->
     </slide>
 </carousel-3d>
+</div>
 </div>
   </div>
 </template>

@@ -1,5 +1,6 @@
 <template>
     <div class="container">
+        <div id="videoimage">
         <div class="silderimage mt-5">
             <div class="row m-auto">
                 <div class="col-md-6">
@@ -31,6 +32,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </template>
