@@ -48,6 +48,7 @@
           </div>
         </div>
       </div>
+      </div>
     </div>
     <div class="silder-3D">
       <div class="font-weight-bold pt-5 imagesilde orange">
@@ -77,7 +78,7 @@
     </slide>
 </carousel-3d>
 </div>
-</div>
+
   </div>
 </template>
 

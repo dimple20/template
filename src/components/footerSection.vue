@@ -6,7 +6,7 @@
     
                     <div class="col-md-3 mt-5 text-left ">
                         <div class="logo text-white mb-2">
-                            <img src="../assets/images/footerlogo.jpg" class="footerimg">
+                            <img src="../assets/images/logofooter.png" class="footerimg">
                         </div>
                         <div class="message text-white mb-3">
                             Lorem ipsum dolar sit amet consectetor adipiscing elit,sed do eiusmod tempore.incididunt ut labore et dolare mango aliqw.Ut enim ad minim veniam,quis nostrud exercitiation uliamco laboris nisi ut aliquip ex ea commomdo consequat

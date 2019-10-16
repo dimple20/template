@@ -1,38 +1,43 @@
 <template>
-    <div>
-        <ul>
-            <li v-for="img in list" v-bind:key="img.index" >
-                <img v-lazy="img.src">
-            </li>
-        </ul>
+  <div id="app">
+  <div class="">
+    <div
+      v-for="(src, index) in imgs"
+      :key="index"
+      class="pic"
+      @click="() => showImg(index)"
+    >
+      <img :src="src">
     </div>
+  </div>
+  <vue-easy-lightbox
+    :visible="visible"
+    :imgs="imgs"
+    @hide="handleHide"
+  ></vue-easy-lightbox>
+</div>
+
 </template>
 
 <script>
-import silderone from "../assets/images/pic8.jpeg";
-  import sildetwo from "../assets/images/footer (1).png";
-  import silderthree from "../assets/images/footer (1).png";
-    export default {
-        data(){
-            return{
-                list:[{
-            src: silderone,
-           
-          },
-          {
-            src: sildetwo,
-           
-          },
-          {
-            src: silderthree,
-            
-          }]
-            }
-        }
-    
+export default {
+  data: {
+    visible: true,
+    imgs: [
+      "../src/assets/images/pic4.jpg",
+      "../src/assets/images/pic6.jpg",
+      "../src/assets/images/pic3.jpg"
+    ]
+  },
+  methods: {
+    showImg(index) {
+      this.index = index;
+      this.visible = true;
+    },
+    handleHide() {
+      this.visible = false;
     }
+  }
+};
 </script>
 
-<style>
-    
-</style>

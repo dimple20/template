@@ -6,6 +6,10 @@ import './registerServiceWorker';
 import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+import _ from "lodash";//loadsh import package
+Vue.use(VueAxios, axios)
 
 // image box
 var VueClazyLoad = require('vue-clazy-load')
@@ -30,7 +34,7 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 // require styles
 import 'swiper/dist/css/swiper.css'
 
-Vue.use(VueAwesomeSwiper, /* { default global options } */ )
+Vue.use(VueAwesomeSwiper, /* { default global options } */)
 
 //lazyload
 import VueLazyload from 'vue-lazyload'
@@ -61,6 +65,7 @@ import {
   faCreditCard,
   faSignInAlt,
   faUser,
+  faSearch
 
 } from '@fortawesome/free-solid-svg-icons'; // fas
 import {
@@ -77,6 +82,7 @@ import {
   faGooglePlusG,
   faPinterest,
   faApple,
+  faSearchengin
 
 
 
@@ -89,9 +95,8 @@ import {
 
 
 
-library.add(faLocationArrow, faPhoneAlt, faStar, faMapMarkerAlt, faPaintBrush, faComments,
-  faPlayCircle, faInfoCircle, faGift, faTicketAlt, faFilm, faCreditCard, faSignInAlt, faUser); // fas
-library.add(faEnvelope, faClock, faUserCircle, faCheckCircle); // far
+library.add(faLocationArrow, faPhoneAlt, faStar, faMapMarkerAlt, faPaintBrush, faComments, faPlayCircle, faInfoCircle, faGift, faTicketAlt, faFilm, faCreditCard, faSignInAlt, faUser, faSearch); // fas
+library.add(faEnvelope, faClock, faUserCircle, faCheckCircle, faSearchengin); // far
 library.add(faTwitter, faFacebookF, faGooglePlusG, faPinterest, faApple); // fab
 
 
